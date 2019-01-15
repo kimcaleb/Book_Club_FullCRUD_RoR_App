@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root "users#index"
   resources :users do # automatically generates all restful routes for a particular controller. 
-    resources :books
+    resources :books 
   end
+  resources :sessions, only: [:new, :create]
+  delete "/logout", to: "sessions#destroy", as: :logout
 end

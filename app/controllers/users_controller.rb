@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   end
 
   def new
-    @user = user.new #so we have the empty user object link to the form where we start mapping the different fields to the different attributes/columns
+    @user = User.new #so we have the empty user object link to the form where we start mapping the different fields to the different attributes/columns
   end
 
   def create
