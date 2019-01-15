@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   before_action :authorize, only: [:show, :edit, :update, :destroy]
   
   def index
-
+    
   end
 
   def show
