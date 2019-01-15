@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  # before_action meanas that before any of the other methods are run the following method will run: authorize, and only for the show, edit, update and destroy methods. 
+  before_action :authorize, only: [:show, :edit, :update, :destroy]
   
   def index
 
@@ -6,7 +8,7 @@ class UsersController < ApplicationController
 
   def show
 
-  end
+  end 
 
   def new
     @user = User.new #so we have the empty user object link to the form where we start mapping the different fields to the different attributes/columns
