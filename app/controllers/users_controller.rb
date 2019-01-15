@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save # returns truthy or falsey based on whether it was saved sucessfully
-      redirect_to new_session_path #
+      redirect_to new_session_path #now we want to create a new session. We create a new session wheenver a someone logs in or creates an account. This will direct the action to the link new_sessions path, which will trigger the create method. 
     end
   end
 

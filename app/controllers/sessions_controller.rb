@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  
+  # notice how we didn't create a model for sessions, just a controller and its views
   def new
   end
 
