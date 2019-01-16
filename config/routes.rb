@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     resources :users
   end
 
+  get "/users/:user_id/searchbooks", to: "searches#index"
   resources :sessions, only: [:new, :create]
   delete "/logout", to: "sessions#destroy", as: :logout
 end
