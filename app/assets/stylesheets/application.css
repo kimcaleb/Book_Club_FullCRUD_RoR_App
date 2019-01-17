@@ -37,6 +37,11 @@
    color:white;
 }
 .buttonreadmore:hover {
+   margin-top:2%;
    text-decoration: none;
    color:white;
+}
+
+.buttons {
+   margin-top:1%;
 }

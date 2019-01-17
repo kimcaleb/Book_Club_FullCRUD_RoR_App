@@ -12,9 +12,12 @@
 <% @results.each do |book| %>
    <div class="container" id="books"> 
     <h5 class="title"> <%= book.title %> </h5>
-    <h5 class="author"> <%= book.authors %> </h5>
+    <h5 class="author"> by <%= book.authors %> </h5>
     <img class="img" src="<%= book.image_link %>"> 
-    <button type="button" class="btn btn-dark"><a href="<%= book.info_link %>" class="buttonreadmore">Read More</a></button>
+    <div class="buttons">
+        <button type="button" class="btn btn-dark"><a href="<%= book.info_link %>" class="buttonreadmore">Read More</a></button>
+        <button type="button" class="btn btn-dark"><a href="/users/:user_id/books/new" class="buttonreadmore">Add to My List</a></button>
+    </div>
    </div>
 <% end %>
 

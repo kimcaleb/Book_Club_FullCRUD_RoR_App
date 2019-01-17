@@ -4,9 +4,6 @@ Rails.application.routes.draw do
     resources :books 
   end
 
-  resources :books do
-    resources :users
-  end
 
   get "/users/:user_id/searchbooks", to: "searches#index"
   get "/users/:user_id/searchbooks/results", to: "searches#show", as: :search
