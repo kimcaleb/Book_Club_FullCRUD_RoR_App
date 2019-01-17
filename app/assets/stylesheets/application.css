@@ -25,3 +25,18 @@
     color: white;
     text-decoration: none;
  }
+
+ #books {
+    text-align:center;
+    margin-top:3%;
+
+ }
+
+.buttonreadmore {
+   text-decoration: none;
+   color:white;
+}
+.buttonreadmore:hover {
+   text-decoration: none;
+   color:white;
+}

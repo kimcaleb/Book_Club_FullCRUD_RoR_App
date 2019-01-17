@@ -1,1 +1,24 @@
-<p><%= @searchBook %> </p>
+<div class="container h-100">
+    <div class="d-flex justify-content-center h-100">
+        <div class="searchbar">
+        <%= form_tag(search_path, :method => "get") do %>
+            <%= text_field_tag(:q, nil, :class => "search_input") %>
+            <%= submit_tag("", :class => "search_icon" ) %>
+        <% end %>
+        </div>
+    </div>
+</div>
+
+<% @results.each do |book| %>
+   <div class="container" id="books"> 
+    <h5 class="title"> <%= book.title %> </h5>
+    <h5 class="author"> <%= book.authors %> </h5>
+    <img class="img" src="<%= book.image_link %>"> 
+    <button type="button" class="btn btn-dark"><a href="<%= book.info_link %>" class="buttonreadmore">Read More</a></button>
+   </div>
+<% end %>
+
+
+
+
+

@@ -6,8 +6,8 @@ class SearchesController < ApplicationController
   end
 
   def show
-    @searchBook = params[:q]
-    @searchBook
+    @search = params[:q]
+    @results = GoogleBooks.search(@search,{:count => 30})
   end
 
   
