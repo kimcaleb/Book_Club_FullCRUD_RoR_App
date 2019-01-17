@@ -8,6 +8,3 @@
 
 
 
-User.create([{name: "Joshua Kim", email: "kimjoshua91@gmail.com", password: "571078"},
-{name: "Daniel Kim", email: "dk@gmail.com", password: "danielkim"}])
-

@@ -1,6 +1,6 @@
 <h1>Books with Friends</h1>
 
-<h3> Popular Books </h3>
+<h3> Books Your Friends Are Reading </h3>
 
 <table class="table table-bordered table-dark">
   <thead>
@@ -13,18 +13,16 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-
+    <% @users.each do |user| %>
+        <% user.books.each do |book| %>
+            <tr>
+                <td> <%= book.name %> </td>
+                <td> <%= book.author %> </td>
+                <td> <%= book.description %> </td>
+                <td> <%= user.name %> </td>
+                <td> <a href="<%= book.link %>">Read More</a></td>
+            </tr>
+        <% end %>
+    <% end %>
   </tbody>
 </table>
