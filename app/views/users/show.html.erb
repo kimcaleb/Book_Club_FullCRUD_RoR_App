@@ -1,2 +1,26 @@
-<h1>Books With Friends</h1>
-<p></p>
+<h1> <%= @user.name %>'s Book List</h1>
+
+<div>
+    <h5>My List</h5>
+    <button type="button" class="btn btn-dark"><a href="/users/<%= @user.id %>/searchbooks" class="buttonreadmore">Explore What to Read</a></button>
+    <table class="table table-bordered table-dark">
+    <thead>
+        <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Author/s</th>
+        <th scope="col">Categories</th>
+        <th scope="col">Read More</th>
+        </tr>
+    </thead>
+    <tbody>
+    <% @user.books.each do |book| %>
+        <tr>
+            <td> <%= book.name %> </td>
+            <td> <%= book.author %> </td>
+            <td> <%= book.description %> </td>
+            <td> <a href="<%= book.link %>">Read More</a></td>
+        </tr>
+    <% end %>
+    </tbody>
+    </table>
+<div>
