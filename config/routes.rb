@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   end
 
 
-  get "/users/:user_id/searchbooks", to: "searches#index"
+  get "/users/:user_id/searchbooks", to: "searches#index", as: :searchbooks
   get "/users/:user_id/searchbooks/results", to: "searches#show", as: :search
   resources :sessions, only: [:new, :create]
   delete "/logout", to: "sessions#destroy", as: :logout

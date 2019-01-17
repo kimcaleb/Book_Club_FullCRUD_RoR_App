@@ -19,7 +19,8 @@
             <%= form_tag(user_books_path(current_user)) do %>
                 <%= hidden_field_tag :title, book.title %>
                 <%= hidden_field_tag :authors, book.authors %>
-                <%= hidden_field_tag :description, book.description %>
+                <%= hidden_field_tag :description, book.categories %>
+                <%= hidden_field_tag :image_link, book.image_link %>
                 <%= hidden_field_tag :info_link, book.info_link %>
                 <%= submit_tag("Add to My List") %>
             <% end %>   
