@@ -1,24 +1,56 @@
 # WDI Project 2 -- Our Shared Shelf App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
 
-Things you may want to cover:
+### What Is It and Why Do we Need It?
+A full-stack application for searching through books with the google books api, adding it to your list, and sharing it with your friends. Are you ever on your facebook or any other social media sites and you ask your friends for book recommendations? 
+  - ISO 9001 Certification is important for a company to have before launching a new product for several reasons.     The reasons include but are not limited to: meeting customer requirements, improving company and producy quality, improving the consistency of your operations, and many more. 
+  - GDP allows for easy back-tracking of events and possibly figuring out what went wrong in the case of an experiment producing unexpected results. 
 
-* Ruby version
+Website URL: (https://sleepy-sands-54407.herokuapp.com/)
 
-* System dependencies
+---
 
-* Configuration
 
-* Database creation
+## Snippets of the App
 
-* Database initialization
+![alt text](https://imgur.com/ICRqD8X)
+![alt text](https://imgur.com/QWQZSMG)
+![alt text](https://imgur.com/JwRup8D)
+![alt text](https://imgur.com/e2uCrtQ)
+![alt text](https://imgur.com/wmVZzq3)
 
-* How to run the test suite
+---
 
-* Services (job queues, cache servers, search engines, etc.)
+## Trello/Postman/WireFrame
 
-* Deployment instructions
+![alt text](https://i.imgur.com/KCE4o1D.jpg)
+![alt text](https://i.imgur.com/wrHfPwJ.jpg)
+![alt text](https://i.imgur.com/0T0fyW3.png)
+![alt text](https://i.imgur.com/8fomvf6.png)
+![alt text](https://i.imgur.com/1cT6x4t.png)
 
-* ...
+---
+
+## Technologies Used
+
+  - Node.js
+  - Express
+  - Mongodb/mongoose
+  - EJS (Embedded JavaScript) / Express-EJS-Layouts
+  - Bcrypt-nodejs
+  - Passport/Passport-local Authenticaton Strategies
+  - Method-Override
+  - Connect-flash
+  - Morgan
+  - dotenv
+  - Bootstrap
+  - JQuery
+  - HTML5/CSS3
+
+---
+
+## Client Side
+
+![alt text](https://i.imgur.com/xTYM3Xh.jpg?1)
+![alt text](https://i.imgur.com/qTjor47.jpg)
