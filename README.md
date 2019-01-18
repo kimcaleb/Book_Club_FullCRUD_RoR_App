@@ -14,11 +14,11 @@ Website URL: (https://sleepy-sands-54407.herokuapp.com/)
 
 ## Snippets of the App
 
-![alt text](https://imgur.com/ICRqD8X)
-![alt text](https://imgur.com/QWQZSMG)
-![alt text](https://imgur.com/JwRup8D)
-![alt text](https://imgur.com/e2uCrtQ)
-![alt text](https://imgur.com/wmVZzq3)
+![alt text](https://i.imgur.com/ICRqD8X.png)
+![alt text](https://i.imgur.com/QWQZSMG.png)
+![alt text](https://i.imgur.com/JwRup8D.png)
+![alt text](https://i.imgur.com/e2uCrtQ.png)
+![alt text](https://i.imgur.com/wmVZzq3.png)
 
 ---
 
