@@ -1,4 +1,4 @@
-<h1 id="homepagetitle"> Your Book List</h1>
+<h1 id="homepagetitle"> Your BookShelf</h1>
 
 
 <div class="profilebuttons">
@@ -29,7 +29,7 @@
             <td> <img src="<%= book.image%>"> <br/> 
                 <%= form_tag(user_book_path(current_user),:method => :delete) do %>
                     <%= hidden_field_tag :book_id, book.id %>
-                    <%= submit_tag("Remove From List", class:"addandremove") %>
+                    <%= submit_tag("Remove From Bookshelf", class:"addandremove") %>
                 <% end %>   
             </td>
             <td> <br/><br/><br/><%= book.name %> </td>
