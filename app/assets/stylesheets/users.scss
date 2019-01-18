@@ -2,20 +2,49 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1 {
-    margin-top: 4% !important;
-    margin-bottom: 4% !important;
- }
- h3 {
+#homepagetitle {
     margin-top: 3% !important;
+    margin-bottom: 4% !important;
+    text-transform: capitalize;
+    font-family: 'Fredericka the Great' !important;
+    font-size: 100px !important;
+    
+ }
+
+ #secondaryhomepagetitle {
+    margin-top: 3% !important;
+    font-family: 'Fredericka the Great' !important;
  }
  body {
     text-align:center !important;
  }
- .table-dark {
+ .table {
      margin-top: 3% !important;
-
+     border:2px solid rgb(128,0,0);
+     border-width: medium;
+     
  }
- .profilebuttons {
-
+ #profiletable {
+   margin:0 5%;
  }
+
+// td {
+//    font-family: "Josefin+Slab" !important;
+   
+//    border:2px solid rgb(128,0,0);
+// }
+
+.thead {
+  background-color: rgb(165,42,42);
+   border-width: medium;
+}
+.body {
+   background-color: 		rgb(160,82,45);
+  
+
+}
+// .head {
+//    border:2px solid rgb(128,0,0);
+//    border-width: medium;
+// }
+ 

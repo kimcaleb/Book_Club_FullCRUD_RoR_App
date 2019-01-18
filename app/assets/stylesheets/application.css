@@ -14,7 +14,8 @@
  *= require_self
  */
  .nav {
-    background: #353b48;
+    background: 	rgb(128,0,0);
+    
  }
  .nav-item {
      color: white;
@@ -24,6 +25,7 @@
  .nav-link {
     color: white;
     text-decoration: none;
+    font-family: "Josefin+Slab";
  }
 
  #books {
@@ -45,6 +47,17 @@
 .buttons {
    margin-top:1%;
 }
+
+.addandremove {
+   background-color:rgb(230, 11, 11);
+   color:white;
+}
+
+#homepagetable {
+   margin:0 5%;
+}
+
+
 
 
 

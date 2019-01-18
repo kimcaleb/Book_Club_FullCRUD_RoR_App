@@ -1,29 +1,31 @@
 
-<h1>Books with Friends</h1>
 
-<h3> See What Others Are Reading </h3>
-<table class="table table-bordered table-dark">
-  <thead>
-    <tr>
-      <th scope="col">Title</th>
-      <th scope="col">Author/s</th>
-      <th scope="col">Categories</th>
-      <th scope="col">Added by</th>
-      <th scope="col">Read More</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @users.each do |user| %>
-        <% user.books.each do |book| %>
-            <tr>
-                <td> <%= book.name %> </td>
-                <td> <%= book.author %> </td>
-                <td> <%= book.description %> </td>
-                <td> <%= user.name %> </td>
-                <td> <a href="<%= book.link %>">Read More</a></td>
-            </tr>
-        <% end %>
-    <% end %>
-  </tbody>
-</table>
+<h1 id="homepagetitle">Our Shared Shelf</h1>
 
+<h3 id="secondaryhomepagetitle"> See What People Are Reading </h3>
+<div id="homepagetable">
+  <table class="table table-bordered table-dark">
+    <thead>
+      <tr class="thead">
+        <th scope="col">Title</th>
+        <th scope="col">Author/s</th>
+        <th scope="col">Categories</th>
+        <th scope="col">Added by</th>
+        <th scope="col">Read More</th>
+      </tr>
+    </thead>
+    <tbody class="body">
+      <% @users.each do |user| %>
+          <% user.books.each do |book| %>
+              <tr>
+                  <td> <%= book.name %> </td>
+                  <td> <%= book.author %> </td>
+                  <td> <%= book.description %> </td>
+                  <td> <%= user.name %> </td>
+                  <td> <a href="<%= book.link %>">Read More</a></td>
+              </tr>
+          <% end %>
+      <% end %>
+    </tbody>
+  </table>
+</div>

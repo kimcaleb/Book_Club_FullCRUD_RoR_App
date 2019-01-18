@@ -22,7 +22,7 @@
                 <%= hidden_field_tag :description, book.categories %>
                 <%= hidden_field_tag :image_link, book.image_link %>
                 <%= hidden_field_tag :info_link, book.info_link %>
-                <%= submit_tag("Add to My List") %>
+                <%= submit_tag("Add to My List", class: "addandremove") %>
             <% end %>   
         </div>
    </div>

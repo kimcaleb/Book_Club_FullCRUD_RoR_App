@@ -1,4 +1,4 @@
-<h1> <%= @user.name %>'s Book List</h1>
+<h1 id="homepagetitle"> Your Book List</h1>
 
 
 <div class="profilebuttons">
@@ -12,10 +12,10 @@
 
 
 
-<div>
+<div id="profiletable">
     <table class="table table-bordered table-dark">
     <thead>
-        <tr>
+        <tr class="thead">
         <th scope="col">My Current List</th>
         <th scope="col">Title</th>
         <th scope="col">Author/s</th>
@@ -29,7 +29,7 @@
             <td> <img src="<%= book.image%>"> <br/> 
                 <%= form_tag(user_book_path(current_user),:method => :delete) do %>
                     <%= hidden_field_tag :book_id, book.id %>
-                    <%= submit_tag("Remove From List") %>
+                    <%= submit_tag("Remove From List", class:"addandremove") %>
                 <% end %>   
             </td>
             <td> <br/><br/><br/><%= book.name %> </td>
@@ -41,4 +41,3 @@
     </tbody>
     </table>
 <div>
-
