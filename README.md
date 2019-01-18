@@ -5,7 +5,7 @@
 ### What Is It and Why Do we Need It?
 A full-stack application for searching through books with the google books api, adding it to your personal list, and sharing it with your friends. It is a fun and iteractive way to look for book recommendations and recommending books to your friends. 
 
-Website URL: (https://sleepy-sands-54407.herokuapp.com/)
+Website URL: (https://powerful-plains-62909.herokuapp.com/)
 
 ---
 
