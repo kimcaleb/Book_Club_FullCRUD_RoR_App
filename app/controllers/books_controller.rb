@@ -16,7 +16,9 @@ class BooksController < ApplicationController
   end
 
   def destroy
-
+    @user = User.find(params[:user_id].to_i)
+    @user.books.delete(params[:book_id])
+    redirect_to user_path(current_user)
   end
 end
 

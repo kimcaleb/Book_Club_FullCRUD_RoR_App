@@ -6,6 +6,7 @@
     <table class="table table-bordered table-dark">
     <thead>
         <tr>
+        <th scope="col"></th>
         <th scope="col">Title</th>
         <th scope="col">Author/s</th>
         <th scope="col">Categories</th>
@@ -15,12 +16,19 @@
     <tbody>
     <% @user.books.each do |book| %>
         <tr>
-            <td> <%= book.name %> </td>
-            <td> <%= book.author %> </td>
-            <td> <%= book.description %> </td>
-            <td> <a href="<%= book.link %>">Read More</a></td>
+            <td> <img src="<%= book.image%>"> <br/> 
+                <%= form_tag(user_book_path(current_user),:method => :delete) do %>
+                    <%= hidden_field_tag :book_id, book.id %>
+                    <%= submit_tag("Remove From List") %>
+                <% end %>   
+            </td>
+            <td> <br/><br/><br/><%= book.name %> </td>
+            <td> <br/><br/><br/><%= book.author %> </td>
+            <td> <br/><br/><br/><%= book.description %> </td>
+            <td> <br/><br/><br/><a href="<%= book.link %>">Read More</a></td>
         </tr>
     <% end %>
     </tbody>
     </table>
 <div>
+
