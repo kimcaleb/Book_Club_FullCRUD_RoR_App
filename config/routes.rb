@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   get "users/:user_id/delete", to: "users#destroy"
   get "/users/:user_id/searchbooks", to: "searches#index", as: :searchbooks
   get "/users/:user_id/searchbooks/results", to: "searches#show", as: :search
-  resources :sessions, only: [:new, :create]
-  delete "/logout", to: "sessions#destroy", as: :logout
+  resources :sessions, only: [:new, :create, :destroy]
+  
 end
