@@ -25,7 +25,7 @@
  .nav-link {
     color: white;
     text-decoration: none;
-    font-family: "Josefin+Slab";
+    font-family: 'Fredericka the Great' !important;;
  }
 
  #books {
