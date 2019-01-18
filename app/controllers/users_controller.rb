@@ -23,15 +23,19 @@ class UsersController < ApplicationController
   end
 
   def edit
-
+    
   end
 
   def update
-
+    if current_user.update_attributes(user_params)
+      redirect_to user_path
+    end
   end
 
   def destroy
-
+    User.all.delete(current_user.id)
+    session[:user_id] = nil
+    redirect_to root_path
   end
 
   private

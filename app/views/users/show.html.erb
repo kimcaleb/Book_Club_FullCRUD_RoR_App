@@ -1,12 +1,22 @@
 <h1> <%= @user.name %>'s Book List</h1>
 
+
+<div class="profilebuttons">
+    <button type="button" class="btn btn-dark">
+        <a href="/users/<%= @user.id %>/searchbooks" class="buttonreadmore">Explore What to Read</a>
+    </button>
+    <button type="button" class="btn btn-dark">
+        <a href="/users/<%= @user.id %>/edit" class="buttonreadmore">Edit Profile</a>
+    </button>
+</div>
+
+
+
 <div>
-<button type="button" class="btn btn-dark"><a href="/users/<%= @user.id %>/searchbooks" class="buttonreadmore">Explore What to Read</a></button>
-    <h5>My Current List</h5>
     <table class="table table-bordered table-dark">
     <thead>
         <tr>
-        <th scope="col"></th>
+        <th scope="col">My Current List</th>
         <th scope="col">Title</th>
         <th scope="col">Author/s</th>
         <th scope="col">Categories</th>
